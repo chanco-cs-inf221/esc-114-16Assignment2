@@ -1,0 +1,128 @@
+h1{
+	font:italic;
+	font-size:56px;
+	background-color:skyblue;
+	margin-bottom:0;
+	}
+
+.mainHeader nav{
+	background-color: #665;
+	height:40px;
+	}
+.mainHeader nav ul{
+	list-style:none;
+	margin:0 auto;
+}
+
+.mainHeader nav ul li{
+	display:inline;
+	float:left;
+	text-decoration:none;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited{
+	color:#FFF;
+	display:inline-block;
+	padding:10px 25px;
+	height:20px;
+}
+
+.mainHeader nav a:hover, .mainHeader nav a:active{
+	background-color:#CF5C3F;
+	text-shadow:none;
+}
+
+a{
+	text-decoration:none;
+	border-radius:5px;
+}
+.content{
+	float:left;
+	width:425px;
+	margin-right:10px;
+	border: 2px solid white;
+}
+
+#work{
+	width:100%;
+	margin-top:5px;
+	float:left;
+	background-color:skyblue;
+}
+
+body{
+	background-color:skyblue;
+}
+
+#footer{
+	margin-left:auto;
+	float:left;
+	background-color:#665;
+	width:100%;
+	color:#FFF;
+}
+form{
+	border: solid  black;
+	height:auto;
+	float:left;
+	background-color:#fff;
+	margin-top:5px;
+	border-radius:5px;
+	margin: : 5px;
+
+}
+#output1 {
+	float:left;
+}
+
+#output{
+	float:left;
+}
+li {
+	list-style: none;
+}
+.class{
+	text-decoration: none;
+	background-color: blue;
+	float:left;
+	border-radius: 5px;
+
+}
+
+form label{
+	color:black;
+	border-radius:1px;
+	background-color: #665;
+}
+form input{
+	height: 20px;
+}
+form input, textarea{
+	color:grey;
+	padding:inherit;;
+	border-radius: 5px;
+
+}
+
+fieldset{
+	margin:25px;
+	margin-left: 10px;
+	border: dotted white;
+
+}
+
+
+
+fieldset #output1 a{
+	display: block;
+	background-color: #665;
+	margin:5px;
+	color: #fff;
+	height:25px;
+	width:auto;
+}
+
+fieldset #output1 a:hover{
+	background-color: white;
+	color:black;
+}

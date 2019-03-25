@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+	<head>
+		<link href="style2.css" rel="stylesheet" type="text/css"/>
+		<title>home</title>
+		<h1><img src="logg.jpg" width="100" length="100" alt="lgo" />Hope Madziakapita</h1>
+
+
+	</head>
+	<body>
+		<header class="mainHeader">
+			<nav>
+				<ul>
+					<li><a href="http://www.facebook.com/el_dex">Facebook</a></li>
+					<li><a href="http://mail.google.com/">Email</a></li>
+					<li><a href="http://www.github.com">Github</a></li>
+				</ul>
+			</nav>
+		</header>
+		<br/>
+		<div class ="content">
+			<h3><strong>PROJECT 1</strong></h3>
+			<p> well this is the bla bla thingie project i particpated in....man is this all necessary i mean do i have to type all this stuff
+				man i wish i had a text generator or something cause this way tireesome. tadatadatdaa i guess this should be enough for now
+			</p>
+		</div>
+		<div class = "content">
+			<h3><strong>PROJECT 2</strong></h3>
+			<p> well this is the bla bla thingie project i particpated in....man is this all necessary i mean do i have to type all this stuff
+				man i wish i had a text generator or something cause this way tireesome. tadatadatdaa i guess this should be enough for now
+			</p>
+		</div>
+		<div class ="content">
+			<h3><strong>PROJECT 3</strong></h3>
+			<p> well this is the bla bla thingie project i particpated in....man is this all necessary i mean do i have to type all this stuff
+				man i wish i had a text generator or something cause this way tireesome. tadatadatdaa i guess this should be enough for now
+			</p>
+		</div>
+		<br/>
+		<div class ="content">
+			<h3><strong>PROJECT 4</strong></h3>
+			<p> well this is the bla bla thingie project i particpated in....man  this all necessary er i mean do i have to type all this stuff
+				man i wish i had a text generator or something cause this way tireesome. tadatadatdaa i guess this should be enough for now
+			</p>
+		</div>
+		<div class = "content">
+			<h3><strong>PROJECT 5</strong></h3>
+			<p> well this is the bla bla thingie project i particpated in....man is this all necessary i mean do i have to type all this stuff
+				man i wish i had a text generator or something cause this way tireesome. tadatadatdaa i guess this should be enough for now
+			</p>
+		</div>
+		<div class ="content">
+
+			<h3><strong>PROJECT 6</strong></h3>
+			<p> well this is the bla bla thingie project i particpated in....man is this all necessary i mean do i have to type all this stuff
+				man i wish i had a text generator or something cause this way tireesome. tadatadatdaa i guess this should be enough for now
+				<ul>
+					<li><a id ="a1" href="new.html"></a></li>
+					<li><a id="a2" href="eh.html"></a></li>
+				</ul>
+			</p>
+		</div>
+		<div id="yourptoj">
+
+
+
+	</div>
+		<div id ="work">
+			<h3><strong>Work Experience</strong></h3>
+			<p> i dont have any work experience because im still a student at the chancellor college of malawi, but once i get my degree get a full/part time
+			job i'll come back to fill in this part cause by then i will have gained some exp. that is if everything goes as planned.
+
+			<form onsubmit="cha()">
+				<p>
+				<h3> Enter Project Details</h3>
+				<label for="Project">Project Name</label>
+				<input id="proj" type="text" placeholder="e.g Project/Hest" required/><br/>
+				<label for="Value">Description</label><br/>
+				<textarea id="des" cols="50" rows="8" placeholder="enter project Description"></textarea><br/>
+				<label for ="Date">Completion Date</label>
+				<input id="dat"type="date" placeholder="dd-mm-yyyy"/>
+				<input type="submit" value="submit"/>
+				</p>
+			</form>
+
+
+
+			<form onsubmit="woork()">
+				<p>
+				<h3> Enter Work Experience Details</h3>
+				<label for="work">Work Experience</label>
+				<input id="inpKey1" type="text" placeholder="e.g Work/Chanco" required/><br/>
+				<label for="Value">Job Description</label><br/>
+				<textarea id="inpValue1" cols="50" rows="8" placeholder="enter job Description" ></textarea><br/>
+				<label for="date">Date</label>
+				<input id="inpDate" type="date" placeholder="dd-mm-yyyy" required/>
+				<input type="submit" value="submit"/>
+				</p>
+			</form>
+
+			<fieldset >
+				<legend><h3>Your Projects and Work Experiences</h3></legend>
+				<div id ="output1">
+
+				</div>
+			</fieldset>
+</div>
+		<div id="footer">
+		<p>.... 2019</p>
+		</div>
+
+
+	</body>
+	<script type="text/javascript">
+		const inpKey=document.getElementById("proj");
+		const inpValue = document.getElementById("des");
+		const dat =document.getElementById("dat");
+		const inpkey1 =document.getElementById('inpkey1');
+		const inpValue1 = document.getElementById('inpValue1');
+		const inpDate = document.getElementById('inpDate');
+		function cha(){
+			event.preventDefault;
+			const key=inpKey.value;
+			siteData = {
+				Description: inpValue.value,
+				completion: dat.value
+			},
+
+			localStorage.setItem(key,JSON.stringify(siteData));
+
+
+
+		};
+
+		function woork(){
+			event.preventDefault;
+			const key = inpKey1.value;
+			siteData1 ={
+				workk : inpValue1.value,
+				date : inpDate.value
+			},
+			localStorage.setItem(key, JSON.stringify(siteData1));
+		}
+
+
+
+		for (let i=0;i<localStorage.length;i++){
+			const key = localStorage.key(i);
+			var display = document.getElementById("output1");
+			var links = document.createElement('a');
+			links.setAttribute("href","page1.html");
+			links.setAttribute("class","link");
+			var project = document.createTextNode(key);
+			links.appendChild(project);
+			display.appendChild(links);
+	}
+	</script>
+
+</html>
